@@ -1,0 +1,43 @@
+.form {
+  background-color: var(--color-bg-primary);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 450px;
+  padding: var(--spacing-2xl);
+  width: 100%;
+
+  @media (max-width: 640px) {
+    padding: var(--spacing-lg);
+  }
+
+  .title {
+    font-size: 32px;
+    text-align: center;
+
+    @media (max-width: 640px) {
+      font-size: 28px;
+    }
+  }
+
+  .subtitle {
+    color: var(--color-text-secondary);
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .hint {
+    background-color: var(--color-bg-tertiary);
+    border-radius: var(--radius-sm);
+    color: var(--color-text-secondary);
+    font-size: 14px;
+    padding: var(--spacing-md);
+    text-align: center;
+
+    p {
+      margin: var(--spacing-xs) 0;
+    }
+  }
+}
